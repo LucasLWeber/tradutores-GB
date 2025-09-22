@@ -1,8 +1,21 @@
-### Comandos para execução do programa
+### Execução do Analizador Léxico Java em ambiente Linux
+
+*Para instalar jflex v1.8*
+```shell
+wget https://sourceforge.net/projects/jflex.mirror/files/v1.8.2/jflex-1.8.2.zip
+unzip jflex-1.8.2.zip
+cd jflex-1.8.2
+```
+
+*Criação de Alias para facilitar o uso do comando*
+```shell
+echo "alias jflex='java -jar ~/jflex-1.8.2/lib/jflex-full-1.8.2.jar'" >> ~/.bashrc
+source ~/.bashrc
+```
 
 *Para compilar*
 ```shell
-java -jar ~/jflex-1.8.2/lib/jflex-full-1.8.2.jar ./Lexer.flex
+jflex ./Lexer.flex
 ```
 
 *Para compilar o .java*
