@@ -1,0 +1,8 @@
+# Para compilar
+java -jar ~/jflex-1.8.2/lib/jflex-full-1.8.2.jar ./Lexer.flex
+
+# Para compilar o .java
+javac Lexer.java
+
+# Para executar o analisador léxico
+java Lexer tests.txt
