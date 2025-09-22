@@ -1,3 +1,36 @@
+### Comandos para execução do programa
+
+*Para compilar*
+```shell
+java -jar ~/jflex-1.8.2/lib/jflex-full-1.8.2.jar ./Lexer.flex
+```
+
+*Para compilar o .java*
+```shell
+javac Lexer.java
+```
+
+*Para executar o analisador léxico*
+```shell
+java Lexer tests.txt
+```
+
+--- 
+Teste gerado:
+```java
+if x == 10
+y = 3.14
+try {
+    throw new RuntimeException
+} catch (Exception e) {
+    // comentário
+}
+String teste = "Olá Unisinos"
+```
+
+---
+### Tabela de retornos
+
 | Código             | Token gerado                   | Comentário                                     |
 | ------------------ | ------------------------------ | ---------------------------------------------- |
 | `if`               | `TOKEN: IF`                    | Palavra reservada reconhecida                  |
