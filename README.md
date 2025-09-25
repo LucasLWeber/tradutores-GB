@@ -25,7 +25,7 @@ javac Lexer.java
 
 *Para executar o analisador léxico*
 ```shell
-java Lexer tests.txt
+java Lexer test.txt
 ```
 
 --- 
